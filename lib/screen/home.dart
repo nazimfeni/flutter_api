@@ -1,6 +1,6 @@
-import 'dart:convert';
-import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'dart:convert'; // for JSON decoding
+import 'package:flutter/material.dart'; //for Flutter UI components
+import 'package:http/http.dart' as http; // for making HTTP requests
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -34,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         },
       ),
+      //creating button
       floatingActionButton: FloatingActionButton(
         onPressed: fetchusers,
       ),
